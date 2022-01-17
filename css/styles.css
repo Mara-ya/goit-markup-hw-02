@@ -107,6 +107,11 @@ a {
     color: var(--second-text);
 }
 
+.tagline-btn:hover,
+.tagline-btn:focus{
+    cursor: pointer;
+}
+
 /* -------------------ABOUT------------------- */
 
 .about-item-title{
@@ -212,6 +217,7 @@ address{
 
 .nav-portfolio-btn:hover,
 .nav-portfolio-btn:focus {
+    cursor: pointer;    
     font-weight: 500;
     font-size: 16px;
     line-height: calc(26 / 12);
