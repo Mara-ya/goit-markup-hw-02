@@ -3,15 +3,21 @@
     --first-text: #212121;
     --second-text: #FFFFFF;
     --third-text: #757575;
+    --background-header: #ECECEC;
+    --background-tagline-and-footer: #2F303A;
+    --background-team: #F5F4FA;
+    --background-fff: #FFFFFF;
+    --backgraund-portfolio-main: #E5E5E5;
+    --web-header: #000000;
+    --background-btn-portfolio: #F5F4FA;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     color: var(--first-text);
-}
-
-header {
-    background-color: #ECECEC;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    background-color: var(--background-fff);
 }
 
 .list {
@@ -22,12 +28,18 @@ a {
     text-decoration: none;
 }
 
+.web {
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    color: var(--corporate-color);
+}
+
 .webstudio{
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31 / 26);
-    letter-spacing: 0.03em;
 }
 
 .visually-hidden {
@@ -44,13 +56,16 @@ a {
 }
 
 /* -------------------HEADER------------------- */
+header {
+    background-color: var(--background-header);
+}
+
 .web-header{
-    color: #000000;
+    color: var(--web-header);
 }
 
 .nav-item {
     font-weight: 500;
-    font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: inherit;
@@ -59,7 +74,6 @@ a {
 .nav-item:hover,
 .nav-item:focus {
     font-weight: 500;
-    font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: var(--corporate-color);
@@ -67,7 +81,6 @@ a {
 
 .header-contacts-item {
     font-weight: 500;
-    font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: var(--third-text);
@@ -76,7 +89,6 @@ a {
 .header-contacts-item:hover,
 .header-contacts-item:focus {
     font-weight: 500;
-    font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: var(--corporate-color);
@@ -84,7 +96,7 @@ a {
 
 /* -------------------TAGLINE------------------- */
 .tagline {
-    background-color: #2F303A;
+    background-color: var(--background-tagline-and-footer);
 }
 
 .tagline-title {
@@ -106,6 +118,7 @@ a {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--second-text);
+    background-color: var(--corporate-color);
 }
 
 .tagline-btn:hover,
@@ -116,16 +129,12 @@ a {
 /* -------------------ABOUT------------------- */
 
 .about-item-title{
-    font-size: 14px;
     line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
 .about-item-text{
-    font-size: 14px;
     line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
     color: var(--third-text);
 }
 
@@ -133,26 +142,24 @@ a {
 
 .tasks-title {
     font-size: 36px;
-    line-height: 42px;
+    line-height: calc(42 /36);
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 
 /* -------------------TEAM------------------- */
 .team {
-    background-color: #F5F4FA;
+    background-color: var(--background-team);
 }
 
 .team-item {
-    background-color: #ffffff;
+    background-color: var(--background-fff);
 }
 
 .team-title {
     font-size: 36px;
     line-height: calc(42 / 36);
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 .team-item-title {
@@ -160,25 +167,23 @@ a {
     font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 .team-item-text {
     font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--third-text); 
 }
 
 /* -------------------FOOTER------------------- */
 
 .web-footer{
-    color: #FFFFFF;
+    color: var(--second-text);
 }
 
 footer {
-    background-color: #2F303A;
+    background-color: var(--background-tagline-and-footer);
 }
 
 address{
@@ -186,21 +191,21 @@ address{
 }
 
 .footer-addres {
-    font-size: 14px;
     line-height: calc(24 / 12);
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--second-text);
 }
 
 .footer-item {
-    font-size: 14px;
     line-height: calc(24 / 12);
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
 
 
 /* -------------------PORTFOLIO------------------- */
+
+.header-portfolio {
+    background-color: var(--background-fff);
+}
 
 /* -------------------NAV_PORTFOLIO------------------- */
 .nav-portfolio-btn {
@@ -208,18 +213,19 @@ address{
     font-size: 16px;
     line-height: calc(26 / 16);
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--first-text);
+    background-color: var(--background-btn-portfolio);
 }
 
 .nav-portfolio-btn:hover,
 .nav-portfolio-btn:focus {
+    color: var(--second-text);
+    background-color: var(--corporate-color);
     cursor: pointer;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(26 / 12);
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--second-text);
 }
 
@@ -234,6 +240,5 @@ address{
 .services-item-text {
     font-size: 16px;
     line-height: calc(30 /16);
-    letter-spacing: 0.03em;
     color: var(--third-text);    
 }
