@@ -235,6 +235,7 @@ address{
     font-size: 18px;
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
+    color: var(--first-text);
 }
 
 .services-item-text {
